@@ -41,7 +41,7 @@ export function AttackHeader({
   return (
     <div className="space-y-3">
       {/* Terminal prompt */}
-      <p className="text-xs text-[var(--hacker-green)]/70 font-[family-name:var(--font-geist-mono)]">
+      <p className="text-xs text-[var(--hacker-green)]/70 font-mono">
         root@cybersec:~/attacks$ cat {attack.slug}.md
       </p>
 

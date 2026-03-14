@@ -72,7 +72,7 @@ export function AttackPageClient({
             onClick={() => setActiveTab(tab.id)}
             className={cn(
               "relative flex-1 px-4 py-2.5 rounded-md text-sm font-medium transition-all duration-200",
-              "font-[family-name:var(--font-geist-mono)]",
+              "font-mono",
               activeTab === tab.id
                 ? "bg-[#002200] border border-[var(--hacker-green)] text-[var(--hacker-green)]"
                 : "bg-[var(--hacker-surface)] border border-[#333] text-[#999] hover:text-[#ccc] hover:border-[#555]",
@@ -117,7 +117,7 @@ export function AttackPageClient({
             <div className="hacker-card p-4 border-[var(--hacker-green)] flex items-center gap-3">
               <span className="text-2xl">{newBadgeData.icon}</span>
               <div>
-                <p className="text-xs text-[var(--hacker-green)] font-[family-name:var(--font-geist-mono)]">
+                <p className="text-xs text-[var(--hacker-green)] font-mono">
                   Badge débloqué !
                 </p>
                 <p className="text-sm font-semibold text-white">

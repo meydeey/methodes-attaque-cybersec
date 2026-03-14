@@ -19,7 +19,7 @@ export function SeverityBadge({ severity }: { severity: Severity }) {
   const config = severityConfig[severity];
   return (
     <span
-      className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-[family-name:var(--font-geist-mono)] uppercase border ${config.className}`}
+      className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono uppercase border ${config.className}`}
     >
       {config.label}
     </span>

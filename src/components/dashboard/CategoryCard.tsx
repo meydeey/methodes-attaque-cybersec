@@ -75,7 +75,7 @@ export function CategoryCard({ category }: { category: Category }) {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-xs font-[family-name:var(--font-geist-mono)] text-[var(--hacker-green)]">
+            <span className="text-xs font-mono text-[var(--hacker-green)]">
               {completedCount}/{attacks.length}
             </span>
             <ChevronDown

@@ -16,7 +16,7 @@ export function QuizSection({ attack }: { attack: Attack }) {
   if (attack.quiz.length === 0) {
     return (
       <div className="hacker-card p-8 text-center">
-        <p className="text-[#666] font-[family-name:var(--font-geist-mono)]">
+        <p className="text-[#666] font-mono">
           Aucun quiz disponible pour cette attaque.
         </p>
       </div>
@@ -72,7 +72,7 @@ export function QuizSection({ attack }: { attack: Attack }) {
               "inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm",
               "bg-[#002200] border border-[var(--hacker-green)] text-[var(--hacker-green)]",
               "hover:bg-[#003300] transition-colors",
-              "font-[family-name:var(--font-geist-mono)]",
+              "font-mono",
             )}
           >
             <RotateCcw className="h-4 w-4" />
@@ -88,7 +88,7 @@ export function QuizSection({ attack }: { attack: Attack }) {
   return (
     <div className="space-y-4">
       {/* Progress */}
-      <div className="flex items-center justify-between text-xs text-[#666] font-[family-name:var(--font-geist-mono)]">
+      <div className="flex items-center justify-between text-xs text-[#666] font-mono">
         <span>
           {">"} QUIZ — Question {quiz.currentIndex + 1}/{quiz.totalQuestions}
         </span>
@@ -119,7 +119,7 @@ export function QuizSection({ attack }: { attack: Attack }) {
                 disabled={quiz.showExplanation}
                 className={cn(
                   "w-full text-left px-4 py-3 rounded-md border text-sm transition-all",
-                  "font-[family-name:var(--font-geist-mono)]",
+                  "font-mono",
                   !showFeedback &&
                     "border-[#333] bg-[var(--hacker-surface)] text-[#ccc] hover:border-[var(--hacker-green)] hover:text-white",
                   showFeedback &&
@@ -168,7 +168,7 @@ export function QuizSection({ attack }: { attack: Attack }) {
                   : "border-red-500/30 bg-red-500/5 text-[#ccc]",
               )}
             >
-              <p className="text-xs font-[family-name:var(--font-geist-mono)] mb-1 text-[#666]">
+              <p className="text-xs font-mono mb-1 text-[#666]">
                 {quiz.isCorrect ? "> CORRECT" : "> INCORRECT"}
               </p>
               <p>{quiz.currentQuestion.explanation}</p>
@@ -181,7 +181,7 @@ export function QuizSection({ attack }: { attack: Attack }) {
                   "px-4 py-2 rounded-md text-sm",
                   "bg-[#002200] border border-[var(--hacker-green)] text-[var(--hacker-green)]",
                   "hover:bg-[#003300] transition-colors",
-                  "font-[family-name:var(--font-geist-mono)]",
+                  "font-mono",
                 )}
               >
                 {quiz.isLastQuestion ? "Voir le résultat" : "Question suivante"}

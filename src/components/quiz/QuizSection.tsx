@@ -35,7 +35,7 @@ export function QuizSection({ attack, onComplete }: QuizSectionProps) {
   return (
     <div className="space-y-6">
       {/* Terminal header */}
-      <div className="flex items-center gap-2 font-[family-name:var(--font-geist-mono)] text-sm text-[var(--hacker-green)]">
+      <div className="flex items-center gap-2 font-mono text-sm text-[var(--hacker-green)]">
         <Terminal className="h-4 w-4" />
         <span>root@cybersec:~$ ./quiz --attack {attack.slug}</span>
       </div>
@@ -48,10 +48,10 @@ export function QuizSection({ attack, onComplete }: QuizSectionProps) {
         existingResult && (
           <div className="hacker-card p-6">
             <div className="space-y-4">
-              <p className="font-[family-name:var(--font-geist-mono)] text-xs text-[var(--hacker-green)]">
+              <p className="font-mono text-xs text-[var(--hacker-green)]">
                 &gt; QUIZ D&Eacute;J&Agrave; COMPL&Eacute;T&Eacute;
               </p>
-              <p className="font-[family-name:var(--font-geist-mono)] text-3xl font-bold text-white">
+              <p className="font-mono text-3xl font-bold text-white">
                 Score :{" "}
                 <span className="text-[var(--hacker-green)]">
                   {existingResult.score}/{existingResult.total}
@@ -70,7 +70,7 @@ export function QuizSection({ attack, onComplete }: QuizSectionProps) {
               </p>
               <button
                 onClick={quiz.reset}
-                className="flex items-center gap-2 rounded-lg border border-[var(--hacker-green)] bg-[var(--hacker-green)]/10 px-6 py-2.5 font-[family-name:var(--font-geist-mono)] text-sm font-semibold text-[var(--hacker-green)] transition-all hover:bg-[var(--hacker-green)]/20"
+                className="flex items-center gap-2 rounded-lg border border-[var(--hacker-green)] bg-[var(--hacker-green)]/10 px-6 py-2.5 font-mono text-sm font-semibold text-[var(--hacker-green)] transition-all hover:bg-[var(--hacker-green)]/20"
               >
                 <RotateCcw className="h-4 w-4" />
                 Recommencer le quiz

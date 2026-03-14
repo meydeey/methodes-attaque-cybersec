@@ -37,7 +37,7 @@ export function BadgeNotification({
             </div>
             <div className="flex-1">
               <div className="mb-1 flex items-center justify-between">
-                <p className="font-[family-name:var(--font-geist-mono)] text-xs text-[var(--hacker-green)]">
+                <p className="font-mono text-xs text-[var(--hacker-green)]">
                   <Award className="mr-1 inline h-3 w-3" />
                   Nouveau badge d&eacute;bloqu&eacute; !
                 </p>

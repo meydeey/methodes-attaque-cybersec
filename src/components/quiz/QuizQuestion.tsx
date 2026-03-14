@@ -58,7 +58,7 @@ export function QuizQuestion({
     <div className="space-y-6">
       {/* Question header */}
       <div className="space-y-3">
-        <p className="font-[family-name:var(--font-geist-mono)] text-xs text-[var(--hacker-green)]">
+        <p className="font-mono text-xs text-[var(--hacker-green)]">
           Question {questionIndex + 1}/{totalQuestions}
         </p>
         <p className="text-[15px] font-semibold leading-relaxed text-white">
@@ -92,7 +92,7 @@ export function QuizQuestion({
             >
               <span
                 className={cn(
-                  "flex h-8 w-8 shrink-0 items-center justify-center rounded font-[family-name:var(--font-geist-mono)] text-sm font-bold",
+                  "flex h-8 w-8 shrink-0 items-center justify-center rounded font-mono text-sm font-bold",
                   showExplanation && isCorrect
                     ? "bg-[var(--hacker-green)]/20 text-[var(--hacker-green)]"
                     : showExplanation && isSelected && !isCorrect
@@ -125,7 +125,7 @@ export function QuizQuestion({
             className="overflow-hidden"
           >
             <div className="rounded-lg border border-[var(--hacker-border)] bg-[#0d1f0d] p-4">
-              <p className="mb-2 font-[family-name:var(--font-geist-mono)] text-xs font-bold text-[var(--hacker-green)]">
+              <p className="mb-2 font-mono text-xs font-bold text-[var(--hacker-green)]">
                 &gt; EXPLICATION
               </p>
               <p className="text-sm leading-relaxed text-[#ccc]">
@@ -146,7 +146,7 @@ export function QuizQuestion({
           >
             <button
               onClick={onNext}
-              className="flex items-center gap-2 rounded-lg border border-[var(--hacker-green)] bg-[var(--hacker-green)]/10 px-6 py-2.5 font-[family-name:var(--font-geist-mono)] text-sm font-semibold text-[var(--hacker-green)] transition-all hover:bg-[var(--hacker-green)]/20"
+              className="flex items-center gap-2 rounded-lg border border-[var(--hacker-green)] bg-[var(--hacker-green)]/10 px-6 py-2.5 font-mono text-sm font-semibold text-[var(--hacker-green)] transition-all hover:bg-[var(--hacker-green)]/20"
             >
               {isLast ? "Voir r\u00e9sultat" : "Suivant"}
               <ChevronRight className="h-4 w-4" />

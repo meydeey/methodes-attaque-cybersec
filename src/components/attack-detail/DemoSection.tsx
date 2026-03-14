@@ -10,11 +10,11 @@ export function DemoSection({ attack }: { attack: Attack }) {
 
   return (
     <div className="hacker-card p-6 space-y-4">
-      <h2 className="text-xs text-[var(--hacker-green)] font-[family-name:var(--font-geist-mono)] tracking-wider">
+      <h2 className="text-xs text-[var(--hacker-green)] font-mono tracking-wider">
         {">"} DÉMONSTRATION
       </h2>
 
-      <div className="scan-lines rounded-md overflow-hidden border border-[var(--hacker-border)]">
+      <div className="scan-lines rounded-md overflow-y-auto border border-[var(--hacker-border)]">
         <AttackAnimation
           slug={attack.slug}
           currentStep={animation.currentStep}

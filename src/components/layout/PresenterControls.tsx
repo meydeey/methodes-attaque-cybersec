@@ -49,7 +49,7 @@ export function PresenterControls({
             className={cn(
               "inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm transition-colors",
               "border border-[var(--hacker-border)] text-[#999] hover:text-[var(--hacker-green)] hover:border-[var(--hacker-green)]/50",
-              "font-[family-name:var(--font-geist-mono)]",
+              "font-mono",
             )}
           >
             <ChevronLeft className="h-4 w-4" />
@@ -78,7 +78,7 @@ export function PresenterControls({
             className={cn(
               "inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm transition-colors",
               "border border-[var(--hacker-border)] text-[#999] hover:text-[var(--hacker-green)] hover:border-[var(--hacker-green)]/50",
-              "font-[family-name:var(--font-geist-mono)]",
+              "font-mono",
             )}
           >
             <span className="max-w-[150px] truncate">{next.name}</span>
@@ -90,7 +90,7 @@ export function PresenterControls({
       </div>
 
       {/* Keyboard shortcuts hint */}
-      <div className="fixed bottom-4 right-4 text-[10px] text-[var(--hacker-green)]/30 font-[family-name:var(--font-geist-mono)] space-y-0.5 border border-[var(--hacker-border)] rounded-md px-3 py-2 bg-transparent">
+      <div className="fixed bottom-4 right-4 text-[10px] text-[var(--hacker-green)]/30 font-mono space-y-0.5 border border-[var(--hacker-border)] rounded-md px-3 py-2 bg-transparent">
         <p>&larr; &rarr; Naviguer | Espace &Eacute;tape | R Reset | Esc Home</p>
       </div>
     </div>

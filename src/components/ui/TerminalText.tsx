@@ -46,7 +46,7 @@ export function TerminalText({
 
   return (
     <span
-      className={cn("font-[family-name:var(--font-geist-mono)]", className)}
+      className={cn("font-mono", className)}
     >
       {text.slice(0, displayedLength)}
       {isComplete && <span className="terminal-cursor" />}

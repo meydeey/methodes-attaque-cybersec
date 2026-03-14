@@ -12,7 +12,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link
           href="/"
-          className="flex items-center gap-2 font-[family-name:var(--font-geist-mono)]"
+          className="flex items-center gap-2 font-mono"
         >
           <span className="text-[var(--hacker-green)] text-lg font-bold">
             &gt; CYBERSEC_ELITE
@@ -21,7 +21,7 @@ export function Header() {
         </Link>
 
         {isLoaded && (
-          <div className="flex items-center gap-4 font-[family-name:var(--font-geist-mono)]">
+          <div className="flex items-center gap-4 font-mono">
             <span className="text-[var(--hacker-green)] text-sm">
               SCORE: {progress.totalScore}
             </span>

@@ -12,7 +12,7 @@ export default function DashboardPage() {
 
       <div className="space-y-4">
         <motion.h2
-          className="font-[family-name:var(--font-geist-mono)] text-[var(--hacker-green)] text-lg"
+          className="font-mono text-[var(--hacker-green)] text-lg"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3 }}
@@ -27,7 +27,7 @@ export default function DashboardPage() {
       </div>
 
       <div className="space-y-4">
-        <h2 className="font-[family-name:var(--font-geist-mono)] text-[var(--hacker-badge)] text-sm uppercase tracking-wider">
+        <h2 className="font-mono text-[var(--hacker-badge)] text-sm uppercase tracking-wider">
           // Badges
         </h2>
         <BadgeShowcase />

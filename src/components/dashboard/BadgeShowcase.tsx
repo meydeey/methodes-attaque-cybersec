@@ -44,7 +44,7 @@ export function BadgeShowcase() {
             variants={item}
           >
             <span className="text-2xl">{badge.icon}</span>
-            <span className="text-xs font-[family-name:var(--font-geist-mono)] text-[var(--foreground)]">
+            <span className="text-xs font-mono text-[var(--foreground)]">
               {badge.name}
             </span>
           </motion.div>

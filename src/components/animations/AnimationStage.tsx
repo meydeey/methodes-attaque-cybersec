@@ -12,7 +12,7 @@ export function AnimationStage({
   return (
     <div
       className={cn(
-        "relative rounded-lg bg-zinc-950 border border-border/30 min-h-[350px] overflow-hidden p-8",
+        "relative rounded-lg bg-zinc-950 border border-border/30 min-h-[350px] overflow-y-auto p-8",
         className,
       )}
     >

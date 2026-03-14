@@ -45,12 +45,12 @@ export function QuizResult({
     >
       {/* Score display */}
       <div className="text-center">
-        <p className="mb-2 font-[family-name:var(--font-geist-mono)] text-xs text-[var(--hacker-green)]">
+        <p className="mb-2 font-mono text-xs text-[var(--hacker-green)]">
           &gt; R&Eacute;SULTAT
         </p>
         <p
           className={cn(
-            "font-[family-name:var(--font-geist-mono)] text-6xl font-bold",
+            "font-mono text-6xl font-bold",
             scoreColor,
           )}
         >
@@ -63,7 +63,7 @@ export function QuizResult({
 
       {/* Per-question recap */}
       <div className="space-y-3">
-        <p className="font-[family-name:var(--font-geist-mono)] text-xs text-[var(--hacker-green)]">
+        <p className="font-mono text-xs text-[var(--hacker-green)]">
           &gt; D&Eacute;TAIL DES R&Eacute;PONSES
         </p>
         {questions.map((q, i) => {
@@ -108,7 +108,7 @@ export function QuizResult({
       {/* Retry button */}
       <button
         onClick={onRetry}
-        className="flex items-center gap-2 rounded-lg border border-[var(--hacker-green)] bg-[var(--hacker-green)]/10 px-6 py-2.5 font-[family-name:var(--font-geist-mono)] text-sm font-semibold text-[var(--hacker-green)] transition-all hover:bg-[var(--hacker-green)]/20"
+        className="flex items-center gap-2 rounded-lg border border-[var(--hacker-green)] bg-[var(--hacker-green)]/10 px-6 py-2.5 font-mono text-sm font-semibold text-[var(--hacker-green)] transition-all hover:bg-[var(--hacker-green)]/20"
       >
         <RotateCcw className="h-4 w-4" />
         Recommencer

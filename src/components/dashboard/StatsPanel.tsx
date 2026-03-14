@@ -63,13 +63,13 @@ export function StatsPanel() {
           variants={item}
         >
           <p
-            className="text-xs font-[family-name:var(--font-geist-mono)] uppercase tracking-wider mb-2"
+            className="text-xs font-mono uppercase tracking-wider mb-2"
             style={{ color: "var(--muted-foreground)" }}
           >
             {stat.label}
           </p>
           <p
-            className="text-3xl font-bold font-[family-name:var(--font-geist-mono)]"
+            className="text-3xl font-bold font-mono"
             style={{ color: stat.color }}
           >
             {stat.value}
